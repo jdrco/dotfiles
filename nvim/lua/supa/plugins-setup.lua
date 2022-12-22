@@ -98,6 +98,12 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- for better jsz indentation
+	use({ "yioneko/nvim-yati", tag = "*", requires = "nvim-treesitter/nvim-treesitter" })
+
+	-- for better commenting
+	use({ "JoosepAlviste/nvim-ts-context-commentstring" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
