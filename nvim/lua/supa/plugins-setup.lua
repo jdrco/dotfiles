@@ -35,9 +35,10 @@ return packer.startup(function(use)
 
 	-- colorscheme
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	-- use("ellisonleao/gruvbox.nvim")
-	-- use("navarasu/onedark.nvim")
-	-- use("folke/tokyonight.nvim")
+	use("ellisonleao/gruvbox.nvim")
+	--[[ use("navarasu/onedark.nvim") ]]
+	--[[ use("folke/tokyonight.nvim") ]]
+	use("catppuccin/nvim")
 	use("sainnhe/sonokai")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
